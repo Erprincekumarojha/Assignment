@@ -1,4 +1,3 @@
-import kotlin.Array as Array
 
 //3. Write function for two matrix multiplaction
 fun main(args: Array<String>) {
@@ -16,12 +15,12 @@ fun main(args: Array<String>) {
     displayProduct(product)
 }
 
-fun multiplyMatrices(firstMatrix: Array, secondMatrix: Array, r1: Int, c1: Int, c2: Int): Array {
+fun multiplyMatrices(firstMatrix: Array<IntArray>, secondMatrix: Array<IntArray>, r1: Int, c1: Int, c2: Int): Array<IntArray> {
     val product = Array(r1) { IntArray(c2) }
     for (i in 0..r1 - 1) {
         for (j in 0..c2 - 1) {
             for (k in 0..c1 - 1) {
-                product[i][j] += firstMatrix[i][k] * secondMatrix[k][j]
+                product[i][j] =product[i][j] + firstMatrix[i][k] * secondMatrix[k][j]
             }
         }
     }
