@@ -16,7 +16,7 @@ fun<T> reverse(arr: Array<T?>) {
     }
 }
 
-fun main() {
+fun main(args:Array<String>) {
     val arr: Array<Int?> = arrayOf(1, 2, 3, 4, 5)
     reverse(arr)
 

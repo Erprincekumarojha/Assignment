@@ -29,7 +29,7 @@ fun multiplyMatrices(firstMatrix: Array, secondMatrix: Array, r1: Int, c1: Int, 
     return product
 }
 
-fun displayProduct(product: Array) {
+fun displayProduct(product: Array<IntArray>) {
     println("Product of two matrices is: ")
     for (row in product) {
         for (column in row) {
